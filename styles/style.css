@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("https://lh3.googleusercontent.com/PeK93DZRWyBH_iyuxm5q_49XZnkRshJoTrvzIcbDp6TXW5rVsfAi6VKMxDJAtUI_XzfsfP0pusFO7DN2XKV74BJ4GGtAfFF1ttVeek5BhkK5g5GFuG5vLHn7AM5X4CTnT4_kiUauVJ3FJc4xelgbtgWU5qgvjUig2VEINpwkKXiBvU2T8BDtThr8mo7_3uhpRn5a534DyLSKgNTXDXvarnxEcab7sF_OifRBRBX8h4YjKGJ_kI8ACrWxxOijZyuTpUUjY33CxqlWqPpkBa1WCcpmGS9hicsBporB-SCXsGVcDzVGlNS9WF3uYVCbqsWUg7EmeUAj5PQoClIWpZaPkIe3ubQp6R-2YfFB7ko2MMPiXlgMrUIoR73v-ljnJiSZkUStcUBfFeHlo71eN4bhn3nSOmda2Lcnhu1iTeJtGSLUUC65bhr1bG9r-6wyn54bn4t1lT8RyEf8sZL5FK3lAQYqvpVdbx72ArbHKTZoX7_cyPWEkKDyKQBD9u7ku7DuOF6EE8mifHaph63PyuWc8wpRKuJ68Q5XkWJCcLVSSnHN0C2PMBk1gzgQvU2ZafXNXJITuu9sNAHnJBVEhtpT0-f7zvExt9dYgVYSAQxAMPVsg8ih15GGqJ5wHlP0YPz7nT2sPqQbfur_T12SJFOhqblGN4CfoVyfPxmTLylfpHyXgfDcSWlccJ4bZTNH3wB9yUHzuQhgSjz1VY7WlcTAyBRimbkG3nFZ3ojuAExw_x7hLhie0wW2cYRDjTGlcE9kjZ8AfGrXQ5jNGUR1m7eiq468rStofhoL8wglULfAMYYvsXZM8OwqvVpLSjClvuTRe2i-rxAV=w1205-h750-no?authuser=0");
+    background-color: #005551;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body1 {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 4fr 2fr 1fr; 
+    gap: 15px 0px; 
+    grid-template-areas: 
+      "upper1"
+      "continue1"
+      "foot"; 
+    justify-content: center; 
+    justify-items: center; 
+    width: 90%; 
+    height: 90%;
+}
+
+.upper1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: upper1;
+    width: 90%;
+    height: 500px;
+    background: #005551 url("https://images.unsplash.com/photo-1609517760017-9b76ac28f0e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1944&q=80") 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20pt;
+    position:relative;
+    padding: 4px;
+}
+
+.upper1 h1 {
+    display: table;
+    margin: 10px auto 10px auto;
+    padding: 2px;
+    font-size: 40pt;
+    background-color: #005551;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.description1 {
+    display: table;
+    margin: 10px auto 10px auto;
+    background-color: #005551;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.continue1 {
+    background-color: #005551;
+    font-size: 35pt;
+    color: white;
+    grid-area: continue1;
+    width: 50%;
+    text-align: center;
+    border: 5px double #5A9495;
+    border-radius: 40px;
+    padding: 8px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continue1 a {
+    color: #a5c3c4;
+}
+.continue1 a:hover {
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.picReference {
+    color: white;
+    background-color: #5A9495;
+    border-radius: 4px;
+    font-size: 10pt;
+    text-align: right;
+    font-style: italic;
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 0.3fr 0.2fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: space-around;    
+    justify-items: center;
+    grid-template-areas:
+      ". head head head ."
+      "background1 background1 picture1 picture1 picture1"
+      ". decisions decisions decisions ."
+      ". foot foot foot .";
+    width: 90%;
+    height: 90%;
+    color: white;
+  }
+  
+.head {
+    grid-area: head;
+    background-color: #005551;
+    font-size: 15pt;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    height: 40px;
+}
+.head a {
+    color: white;
+    padding: 15px;
+}
+.head a:hover {
+    color: #5A9495;
+}
+
+
+.background1 {
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    grid-area: background1;
+    align-self: stretch;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.background1 button {
+    background-color: #5a9495;
+    border: white;
+    border-radius: 3px;
+    font-size: 20pt;
+    padding: 5px;
+    color: white;
+    margin: auto;
+}
+
+.background1 button:hover {
+    color:#5a9495;
+    background-color: white;
+}
+
+.background1 h2 {
+    padding: 10px;
+    text-align: center;
+    font-size: 25pt;
+}
+
+.background1 p {
+    padding: 10px;
+}
+
+.picture1 {
+    grid-area: picture1;
+    position: relative;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+  
+.decisions {
+    background-color: #005551;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    justify-content: space-around;
+    grid-template-areas:
+      "decide decide decide decide"
+      "dec1 dec1 dec2 dec2";
+    grid-area: decisions;
+
+}
+
+  
+.decide {
+    grid-area: decide;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+}
+.dec1 {
+    background-color: white;
+    grid-area: dec1;
+    text-align: center;
+    place-self: center stretch;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.dec1 a {
+    color: #005551;
+    font-size: 16pt;
+    font-weight: bold;
+}
+  
+.dec2 {
+    background-color: white;
+    grid-area: dec2;
+    text-align: center;
+    place-self: center stretch;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.dec2 a {
+    color: #005551;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.decisions1 {
+    background-color: #005551;
+    border-radius: 3px;
+    display: grid;
+    gap: 0px 20px;
+    flex-direction: column;
+    grid-area: decisions;
+    grid-template-areas:
+    "decide decide decide decide"
+    "dec3 dec3 dec3 dec3";
+    text-align: center;
+}
+.dec3 {
+    grid-area: dec3;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+}
+.dec3 a {
+    color: #005551;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+.foot {
+    grid-area: foot;
+    text-align: center;
+}
+
+.foot a {
+    color: white;
+}
+  
+a {
+    color: white;
+}
+#pic1 {
+    display: block;
+}
+
+#lookatpic1 {
+    display: none;
+}
+
+#mapdiv {
+    display: none;
+}
+
+#blackheadstext {
+    display: none;
+}
+
+#pic2 {
+    display: none;
+    max-height: 700px;
+}
+
+#decisions1 {
+    display: none;
+}
+
+#map1 {
+    display: none;
+}
+
+
+#strong {
+    font-size: 16pt;
+}
+
+#thank { 
+    background-color: #005551;
+    padding: 3pt;
+    font-size: 25pt;
+}
+
+  
+
+.wholestory { display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: space-around;    
+    justify-items: center;
+    grid-template-areas:
+      "StartS StartPic"
+      "Cross CrossPic"
+      "Further FurtherPic"
+      "Blackheads BlackheadsPic"
+      "Bourse BoursePic"
+      "NewspaperS NewspaperPic"
+      "Kaula KaulaPic"
+      "NewB NewBPic"
+      "Nowadays NowadaysPic";
+    width: 90%;
+    height: 90%;
+  }
+  
+.Start { 
+    grid-area: StartS;
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.StartPic { 
+    grid-area: StartPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.Cross { 
+    grid-area: Cross; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.CrossPic { 
+    grid-area: CrossPic;
+    display: flex;
+    flex-direction: column;    
+}
+  
+.Further { 
+    grid-area: Further; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.FurtherPic { 
+    grid-area: FurtherPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.Blackheads { 
+    grid-area: Blackheads; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.BlackheadsPic { 
+    grid-area: BlackheadsPic;
+    display: flex;
+    flex-direction: column;
+}
+  
+.Bourse { 
+    grid-area: Bourse; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.BoursePic { 
+    grid-area: BoursePic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.Newspaper { 
+    grid-area: NewspaperS; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.NewspaperPic { 
+    grid-area: NewspaperPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.Kaula { 
+    grid-area: Kaula; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.KaulaPic { 
+    grid-area: KaulaPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.NewB { 
+    grid-area: NewB; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.NewBPic { 
+    grid-area: NewBPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.Nowadays { 
+    grid-area: Nowadays; 
+    background-color: white;
+    color: #005551;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+  
+.NowadaysPic { 
+    grid-area: NowadaysPic; 
+    display: flex;
+    flex-direction: column;
+}
+  
+.whole {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picReference1 {
+    color: white;
+    background-color: #5A9495;
+    border-radius: 4px;
+    font-size: 10pt;
+    text-align: center;
+    font-style: italic;
+}
+
+.aboutWhole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: #005551;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 20px;
+}
+
